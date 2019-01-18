@@ -14,7 +14,7 @@ config_template = {'DATA': {'db_config': '/opt/tanner/db/db_config.json',
                    'TANNER': {'host': '0.0.0.0', 'port': 8090},
                    'WEB': {'host': '0.0.0.0', 'port': 8091},
                    'API': {'host': '0.0.0.0', 'port': 8092},
-                   'PHPOX': {'host': '0.0.0.0', 'port': 8088},
+                   'PHPOX': {'host': '127.0.0.1', 'port': 8088},
                    'REDIS': {'host': 'localhost', 'port': 6379, 'poolsize': 80, 'timeout': 1},
                    'EMULATORS': {'root_dir': '/opt/tanner'},
                    'EMULATOR_ENABLED': {'sqli': True, 'rfi': True, 'lfi': True, 'xss': True, 'cmd_exec': True,
@@ -26,7 +26,7 @@ config_template = {'DATA': {'db_config': '/opt/tanner/db/db_config.json',
                    'MONGO': {'enabled': False, 'URI': 'mongodb://localhost'},
                    'HPFEEDS': {'enabled': False, 'HOST': 'localhost', 'PORT': 10000, 'IDENT': '', 'SECRET': '',
                                'CHANNEL': 'tanner.events'},
-                   'LOCALLOG': {'enabled': False, 'PATH': '/tmp/tanner_report.json'},
+                   'LOCALLOG': {'enabled': True, 'PATH': '/tmp/tanner_report.json'},
                    'CLEANLOG': {'enabled': False}
                    }
 
