@@ -11,7 +11,7 @@ config_template = {'DATA': {'db_config': '/opt/tanner/db/db_config.json',
                             'crawler_stats': '/opt/tanner/data/crawler_user_agents.txt',
                             'geo_db': '/opt/tanner/db/GeoLite2-City.mmdb'
                             },
-                   'TANNER': {'host': '0.0.0.0', 'port': 8090},
+                   'TANNER': {'host': '0.0.0.0', 'port': 5678},
                    'WEB': {'host': '0.0.0.0', 'port': 8091},
                    'API': {'host': '0.0.0.0', 'port': 8092},
                    'PHPOX': {'host': '0.0.0.0', 'port': 8088},
