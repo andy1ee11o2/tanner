@@ -45,7 +45,7 @@ class TannerServer:
 
     @staticmethod
     async def default_handler(request):
-        return web.Response(text="Tanner server")
+        return web.Response(text="Hello World")
 
     async def handle_event(self, request):
         data = await request.read()
