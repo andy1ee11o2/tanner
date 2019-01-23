@@ -19,7 +19,7 @@ RUN apk -U --no-cache add \
     git clone --depth=1 https://github.com/andy1ee11o2/tanner /opt/tanner && \
     cp /root/dist/config.py /opt/tanner/tanner/ && \
     cd /opt/tanner/ && \
-    pip3 install --no-cache-dir --upgrade pip setuptools && \
+    pip3 install --no-cache-dir --upgrade setuptools && \
     pip3 install --no-cache-dir -r requirements.txt && \
     python3 setup.py install && \
     cd / && \
@@ -32,7 +32,7 @@ RUN apk -U --no-cache add \
             python3-dev && \
     rm -rf /root/* && \
     rm -rf /tmp/* /var/tmp/* && \
-    rm -rf /var/cache/apk/*
+    rm -rf /var/cache/apk/* && \
 
 # mkdir tanner
     mkdir /var/log/tanner /tmp/tanner && \
